@@ -1,0 +1,611 @@
+/* ==================== GENERAL */
+h1 {
+    color: #671620;
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1em;
+    text-align: center;
+    padding: 20px 0px 20px;
+    margin: 50px 0px 10px;
+}
+h1:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(images/background/devider.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+p {
+    color: #333;
+    font-family: 'Numans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.7em;
+    margin: 0px 0px 10px;
+}
+img.ornamen1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    z-index: 0;
+}
+img.ornamen2 {
+    position: absolute;
+    right: 0;
+    bottom: -150px;
+    width: 250px;
+    z-index: 0;
+}
+img.ornamen3 {
+    display: block;
+    margin: 50px auto;
+    width: 200px;
+}
+img.ornamen4 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    z-index: 3;
+}
+
+/* ==================== MODAL */
+h2.modal-heading {
+    font-size: 22px;
+    color: #671620;
+    font-family: 'Taviraj', serif;
+    line-height: 1em;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 0px;
+    font-weight: 500;
+}
+.modal-nama {
+    color: #333;
+    line-height: 1.2em;
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+}
+.modal-open .modal {
+    padding: 0px !important;
+}
+.modal-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+}
+.modal-body {
+    height: 100%;
+}
+.modal-content {
+    background-image: url(images/gallery/gallery5.jpg);
+    padding: 15% 0px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+    z-index: 999;
+}
+
+.modal-dialog2 {
+    width: 70%;
+    max-width: none;
+    height: 70%;
+    margin: 0;
+}
+.modal-body2 {
+    height: 100%;
+}
+.modal-content2 {
+    /*background-image: url(images/gallery/gallery5.jpg);*/
+    background-color: #fff;
+    
+    height: auto;
+    width: auto;
+    background-position: auto;
+    text-align: center;
+    
+    align-content: center;
+
+}
+
+.modal-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0.66) 0%,#ffffff 100%);
+}
+.btn-modal {
+    background: #671620;
+    color: #fff;
+    font-family: 'Numans', sans-serif;
+    font-size: 16px;
+    border-radius: 0px;
+    padding: 10px 25px;
+}
+span.modal-copyright {
+    color: #333;
+    font-family: 'Numans', sans-serif;
+    font-size: 13px;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right :20px;
+}
+a.modal-link {
+    color: #671620;
+}
+
+/* ==================== CAROUSEL FULL HEIGHT SETTING */
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+    background-color: #ffffff;
+    font-family: 'Numans', sans-serif;
+    color: #333;
+}
+.carousel, .item, .active {
+    height:100%;
+}
+.carousel-inner {
+    height:100%;
+}
+.carousel-caption {
+    position: fixed;
+    bottom: 13%;
+    left: 5% !important;
+    right: 5% !important;
+}
+.carousel .item {
+    background-color: #777;
+}
+.carousel .carousel-inner .bg {
+    background-repeat: no-repeat;
+    background-size: cover!important;
+}
+.carousel .carousel-inner .bgdigitalbali {
+    background-position: center center;
+    background-attachment: inherit;
+}
+.carousel-indicators .active {
+    background-color: #671620;
+}
+.carousel-indicators li {
+    border: 0.5px solid #fff !important;
+}
+.carousel.carousel-mobile {
+    display: none;
+}
+
+/* ==================== CAROUSEL CAPTION */
+.slider-tempat,
+.slider-heading {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px !important;
+    line-height: 1em;
+    margin: 0px 0px;
+    color: #fff;
+}
+.slider-nama {
+    font-family: 'Girassol', cursive;
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.5em !important;
+    margin-top: -5px;
+    letter-spacing: 2px;
+}
+.fa-arrow-circle-down {
+    font-size: 28px;
+    animation: blinker 1.5s linear infinite;
+    line-height: 1.5em;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ==================== MEMPELAI */
+.mempelai .mempelai-foto {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px #a37077;
+}
+.mempelai .mempelai-foto.mempelai-foto-pria {
+    background-position: -175px -215px !important;
+    background-size: 220% !important;
+    background-repeat: no-repeat !important;
+}
+.mempelai .mempelai-foto.mempelai-foto-wanita {
+    background-position: -70px -130px !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+}
+.mempelai .mempelai-foto.mempelai-foto-wanita22 {
+    width: 170px;
+    height: 170px;
+    background-position: -70px -130px !important;
+    background-size: 150% !important;
+    background-repeat: no-repeat !important;
+}
+.mempelai .mempelai-nama {
+    color: #671620;
+    text-align: center;
+    line-height: 1em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.mempelai .mempelai-detail {
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 0px 50px;
+}
+
+/* ==================== DOA */
+.doa {
+    margin-top: 50px;
+}
+.doa p:before {
+    content:'\f10d';
+    font-family: 'FontAwesome';
+    font-size: 22px;
+    color: #671620;
+}
+
+/* ==================== COUNTDOWN */
+.countdown {
+    margin-bottom: 50px;
+}
+.timer {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 0px;
+}
+.timer p {
+    background: #671620;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.7em;
+    padding-bottom: 0px !important;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    width: 50%;
+    margin: 0px auto;
+}
+
+/* ==================== ACARA */
+.acara-background {
+    background-position: center center !important;
+    background-size: cover !important;
+    padding: 70px 20% !important;
+}
+.acara-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg,rgba(255,255,255,0.66) 0%, #ffffff 100%);
+}
+.acara-heading {
+    color: #671620;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 34px;
+    font-weight: 600;
+}
+.acara-detail {
+    font-size: 16px;
+}
+.btn-map {
+    background: #671620;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 0px;
+    padding: 10px 15px;
+}
+.acara-divider {
+    width: 100%;
+    height: 2px;
+    background: #671620;
+    border-radius: 5px;
+    margin: 50px auto !important;
+}
+
+/* ==================== COVID */
+img.banner-covid {
+    width: 50%;
+}
+
+/* ==================== GALLERY */
+.photo {
+    margin: 0px 0px 0px;
+}
+.img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    -o-object-fit:cover;
+}
+.items {
+    padding: 1px;
+    height: 350px;
+}
+.items a:focus{
+    outline: none;
+}
+.items a:after{
+    content:"\f004";
+    font-family: 'FontAwesome';
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 1px;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.items a:hover:after{
+    opacity: 1;
+}
+
+/* ==================== RSVP Form*/
+#rsvp {
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(103,22,32,0.10));
+    border-bottom: 1.5px solid rgba(103,22,32,0.6);
+    padding-bottom: 50px;
+}
+.form-control {
+    border-radius: 0px;
+    height: 50px;
+}
+label {
+    color: #671620;
+}
+.btn-rsvp {
+    border-radius: 0px;
+    background: #671620;
+    border: 0px;
+}
+.alert-success {
+    color: #fff;
+    background-color: #671620;
+    border-color: #671620;
+    border-radius: 0px;
+    margin: 20px 0px 0px;
+    animation: blinker 1.5s linear infinite;
+}
+
+/* ==================== RSVP Kehadiran*/
+table.dataTable {
+    font-family: 'Numans', sans-serif;
+    font-size: 16px;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 18px;
+    border-bottom: 0px solid #111;
+}
+table.dataTable.no-footer {
+    border-bottom: 0px solid #111;
+}
+.dataTables_wrapper .dataTables_filter label, .dataTables_wrapper .dataTables_length label {
+    color: #333;
+}
+.dataTables_wrapper .dataTables_filter input {
+    background: #fff;
+    border: 1px solid #333;
+}
+
+/* ==================== KOMENTAR */
+.komentar {
+    text-align: center;
+    margin: 0px 0px 50px;
+}
+
+/* ==================== MUSIC */
+#button {
+    position: fixed;
+    bottom: 30px;
+    padding: 10px 15px 5px 15px;
+    background-color: #671620;
+    right: 30px;
+    color: #fff;
+    font-size: 26px;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+/* ==================== FOOTER */
+.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0px;
+}
+.footer a {
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 10px;
+    font-size: 32px;
+    line-height: 1em;
+}
+.footer a:hover {
+    color: #671620;
+}
+
+/* Custom CSS for 980px or mobile version */
+@media all and (max-width: 980px) {
+
+    /* ==================== GENERAL */
+    p {
+        font-size: 14px;
+    }
+    img.ornamen1 {
+        width: 140px;
+    }
+    img.ornamen2 {
+        bottom: -130px;
+        width: 150px;
+    }
+    img.ornamen3 {
+        margin: 0px auto 20px;
+        width: 125px;
+    }
+    img.ornamen4 {
+        width: 125px;
+    }
+
+    /* ==================== MODAL */
+    .modal-content {
+        background-position: center center;
+    }
+    .modal-nama {
+        font-size: 28px;
+    }
+
+    /* ==================== CAROUSEL FULL HEIGHT SETTING */
+    .carousel.carousel-desktop {
+        display: none;
+    }
+    .carousel.carousel-mobile {
+        display: block;
+    }
+
+    /* ==================== CAROUSEL FULL HEIGHT SETTING */
+    .slider-tempat,
+    .slider-heading {
+        font-size: 16px !important;
+    }
+    .slider-nama {
+        font-size: 42px !important;
+    }
+    .slider-divider {
+        font-size: 50px;
+    }
+
+    /* ==================== COUNTDOWN */
+    .timer p {
+        width: 100%;
+    }
+
+    /* ==================== ACARA */
+    .acara-background {
+        background-position: center center !important;
+        padding: 50px 0% !important;
+    }
+    .acara-divider {
+        width: 60%;
+    }
+
+    /* ==================== COVID */
+    img.banner-covid {
+        width: 100%;
+    }
+
+    /* ==================== GALLERY */
+    .items a:after{
+        line-height: 250px;
+    }
+    .items,
+    .items.lanscape {
+        height: 250px;
+    }
+
+
+}
+
+#button1 {
+
+    display: fixed;
+    background-color: #671620;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+#button1::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+#button1:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+#button1:active {
+    background-color: #555;
+}
+#button1.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+    width: 77%;
+    margin: 50px auto;
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    color: #6c767a;
+    line-height: 1.9;
+}
+@media (min-width: 500px) {
+    .content {
+        width: 43%;
+    }
+    #button1 {
+        margin: 30px;
+    }
+}
+.content h1 {
+    margin-bottom: -10px;
+    color: #03a9f4;
+    line-height: 1.5;
+}
+.content h3 {
+    font-style: italic;
+    color: #96a2a7;
+}
